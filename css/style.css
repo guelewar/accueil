@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.accueil {
+  position: relative;
+  background-image: url('../images/cover.jpg');
+  background-color: #007bff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accueil .author {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 8px 5px 0;
+}
+
+.accueil .author a {
+  font-style: italic;
+  color: white;
+  font-weight: 600;
+}
+
+.fond-noir {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contenu {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.contenu h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 5em;
+  margin-bottom: 0.5em;
+}
+
+.contenu p {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.contenu button {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.contenu button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contenu h1 {
+    font-size: 2em;
+  }
+
+  .contenu p {
+    font-size: 1.2em;
+  }
+
+  .contenu button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}
